@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tú Rương & Rũng Hà - Trọn vẹn ríu rít</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <title>Tuấn Linh & Thanh Hải - Trọn vẹn yêu thương</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Wedding website for Tuấn Linh & Thanh Hải">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -24,13 +23,79 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        #gallery {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .gallery-carousel {
+            position: relative;
+            padding: 0 50px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover a {
+            opacity: 1;
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .owl-prev, .owl-next {
+            position: absolute;
+            background-color: rgba(255,255,255,0.7) !important;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="font-secondary text-white mb-n2">Tú Rương <span class="text-primary">&</span> Rũng Hà</h1>
+            <h1 class="font-secondary text-white mb-n2">Tuấn Linh <span class="text-primary">&</span> Thanh Hải</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -38,12 +103,12 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Trang chủ</a>
-                <a href="#about" class="nav-item nav-link">Về chúng tôi</a>
-                <a href="#story" class="nav-item nav-link"> Câu chuyện của chúng tôi</a>
+                <a href="#about" class="nav-item nav-link">Về chúng mình</a>
+                <a href="#story" class="nav-item nav-link"> Câu chuyện của chúng mình</a>
                 <a href="#gallery" class="nav-item nav-link">Thư viện ảnh</a>
             </div>
             <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                <h1 class="font-secondary text-white mb-n2">Tú Rương <span class="text-primary">&</span> Rũng Hà</h1>
+                <h1 class="font-secondary text-white mb-n2">Tuấn Linh <span class="text-primary">&</span> Thanh Hải</h1>
             </a>
             <div class="navbar-nav mr-auto py-0">
                 <a href="#family" class="nav-item nav-link">Gia đình</a>
@@ -64,9 +129,9 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Tú Rương & Rũng Hà</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Tuấn Linh & Thanh Hải</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Trọn vẹn ríu rít</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Trọn vẹn một đời</h3>
                             </div>
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -79,7 +144,7 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Tú Rương & Rũng Hà</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Tuấn Linh & Thanh Hải</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Mãi một tình yêu</h3>
                             </div>
@@ -129,7 +194,7 @@
     <div class="container-fluid py-5" id="about">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Về chúng tôi</h6>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Về chúng mình</h6>
                 <h1 class="font-secondary display-4">Cô dâu & Chú rể</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
@@ -137,11 +202,11 @@
                 <div class="col-md-6 p-0 text-center text-md-right">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">Chủ rể</h3>
-                        <p>Ngày cưới hôm nay thật đặc biệt, chúng tôi hy vọng mọi người được vui. Hãy chung vui với chúng tôi bằng thật nhiều những tấm ảnh. Nếu ai còn rảnh rỗi, mời bạn nán lại tới cuối chương trình để chụp ảnh, chuyện trò cùng chúng tôi. Xin cảm ơn tất cả mọi người đã đến đây hôm nay!</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Rũng Hà</h3>
+                        <p>Ngày cưới hôm nay thật đặc biệt, chúng mình hy vọng mọi người được vui. Hãy chung vui với chúng mình bằng thật nhiều những tấm ảnh. Nếu ai còn rảnh rỗi, mời bạn nán lại tới cuối chương trình để chụp ảnh, chuyện trò cùng chúng mình. Xin cảm ơn tất cả mọi người đã đến đây hôm nay!</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Thanh Hải</h3>
                         <div class="position-relative">
                             <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/bun.ljnk/"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
@@ -162,7 +227,7 @@
                         <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Kwan</h3>
                         <div class="position-relative">
                             <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/hai.bee.54"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
@@ -178,8 +243,8 @@
     <div class="container-fluid py-5" id="story">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Câu chuyện của chúng tôi</h6>
-                <h1 class="font-secondary display-4">Tình yêu của chúng tôi</h1>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Câu chuyện của chúng mình</h6>
+                <h1 class="font-secondary display-4">Tình yêu của chúng mình</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
@@ -190,8 +255,8 @@
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">First Meet</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="text-uppercase mb-2">21 Nov 2020</p>
+                            <p class="m-0">Lần đầu tiên biết nhau, chúng mình đã có một cảm giác gần gũi.</p>
                         </div>
                     </div>
                 </div>
@@ -199,8 +264,8 @@
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">First Date</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="text-uppercase mb-2">01 Feb 2021</p>
+                            <p class="m-0">Sau một thời gian tìm hiểu, ngày 02/01, Linh đã chính thức tỏ tình và chúng mình bắt đầu yêu nhau.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -214,17 +279,17 @@
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Proposal</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="text-uppercase mb-2">10 Jun 2024</p>
+                            <p class="m-0">Với thời gian 3 năm tìm hiểu và yêu nhau, tuy không ngắn nhưng cũng không dài, chúng mình quyết định tiến tới hôn nhân, về chung một mái nhà <3.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Enagagement</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <h4 class="mb-2">Wedding</h4>
+                            <p class="text-uppercase mb-2">02 Nov 2024</p>
+                            <p class="m-0">Đám cưới sẽ được tổ chức vào ngày 02/11/2024. Sự có mặt của các bạn sẽ tiếp sức cho hạnh phúc của chúng mình!!!</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -241,45 +306,12 @@
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Thư viện ảnh</h6>
-            <h1 class="font-secondary display-4 text-white">Ảnh cưới của chúng tôi</h1>
+            <h1 class="font-secondary display-4 text-white">Ảnh cưới của chúng mình</h1>
             <i class="far fa-heart text-white"></i>
         </div>
-        <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
-                <a href="img/gallery-1.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
-                <a href="img/gallery-2.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+        <div class="container">
+            <div id="gallery-carousel" class="owl-carousel owl-theme">
+                <!-- Gallery items will be dynamically inserted here -->
             </div>
         </div>
     </div>
@@ -296,7 +328,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5>
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Đám cưới sẽ được tổ chức vào ngày 02/11/2024. Sự có mặt của các bạn sẽ tiếp sức cho hạnh phúc của chúng mình!!!</h5>
                 </div>
             </div>
             <div class="row">
@@ -304,15 +336,15 @@
                     <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
                         <img class="img-fluid mb-4" src="img/event-1.jpg" alt="">
                         <h4 class="mb-3">Ăn hỏi</h4>
-                        <p class="mb-2">PeakView 36 Hoàng Cầu</p>
-                        <p class="mb-0">12:00AM - 13:00PM</p>
+                        <p class="mb-2">70 Nguyễn Đình Hoàn - Cầu Giấy - Hà Nội</p>
+                        <p class="mb-0">15:00PM - 17:00PM</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="text-center text-md-left ml-md-3">
                         <img class="img-fluid mb-4" src="img/event-2.jpg" alt="">
                         <h4 class="mb-3">Đám cưới</h4>
-                        <p class="mb-2">PeakView 36 Hoàng Cầu</p>
+                        <p class="mb-2">Xanh Palace - 135 Hào Nam - Đống Đa - Hà Nội</p>
                         <p class="mb-0">18:00PM - 21:00PM</p>
                     </div>
                 </div>
@@ -320,173 +352,6 @@
         </div>
     </div>
     <!-- Event End -->
-
-
-    <!-- Friends & Family Start -->
-    <div class="container-fluid py-5" id="family">
-        <div class="container pt-5 pb-3">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Bạn bè & Gia đình</h6>
-                <h1 class="font-secondary display-4">Phù dâu & Phù rể</h1>
-                <i class="far fa-heart text-dark"></i>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Phù rể</li>
-                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Phù dâu</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Friends & Family End -->
-
-
-    <!-- RSVP Start -->
-    <div class="container-fluid py-5" id="rsvp">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
-                <h1 class="font-secondary display-4">Join Our Party</h1>
-                <i class="far fa-heart text-dark"></i>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name"/>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email"/>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>Number of Guest</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>I'm Attending</option>
-                                        <option>All Events</option>
-                                        <option>Wedding Party</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- RSVP End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
@@ -504,7 +369,7 @@
             <div class="d-flex justify-content-center py-2">
                 <p class="text-white" href="#">linhhoang1094@gmail.com</p>
                 <span class="px-3">|</span>
-                <p class="text-white" href="#">0123456789</p>
+                <p class="text-white" href="#">0909691094</p>
             </div>
         </div>
     </div>
@@ -529,6 +394,75 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryCarousel = document.getElementById('gallery-carousel');
+            const maxImages = 80;
+            let loadedImages = [];
+
+            function loadGalleryImages() {
+                for (let i = 1; i <= maxImages; i++) {
+                    const imagePath = `img/gallery-${i}.jpg`;
+                    const img = new Image();
+                    img.onload = function() {
+                        loadedImages.push(imagePath);
+                        if (loadedImages.length === maxImages || i === maxImages) {
+                            initializeCarousel();
+                        }
+                    };
+                    img.onerror = function() {
+                        if (loadedImages.length > 0) {
+                            initializeCarousel();
+                        }
+                        return;
+                    };
+                    img.src = imagePath;
+                }
+            }
+
+            function initializeCarousel() {
+                let galleryHTML = '';
+                loadedImages.forEach((imagePath, index) => {
+                    galleryHTML += `
+                        <div class="item">
+                            <div class="gallery-item">
+                                <img class="img-fluid" src="${imagePath}" alt="Gallery Image ${index + 1}">
+                                <a href="${imagePath}" data-lightbox="gallery">
+                                    <i class="fa fa-2x fa-plus text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                });
+                galleryCarousel.innerHTML = galleryHTML;
+                $('.owl-carousel').owlCarousel({
+                    items: 3,
+                    loop: true,
+                    margin: 20,
+                    nav: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        768: {
+                            items: 2
+                        },
+                        992: {
+                            items: 3
+                        }
+                    },
+                    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+                });
+            }
+
+            loadGalleryImages();
+        });
+    </script>
 </body>
 
 </html>
