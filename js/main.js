@@ -82,18 +82,36 @@
         return false;
     });
 
+    $('.owl-carousel').on('changed.owl.carousel', function(e) {
+
+        $('button.owl-next').removeAttr('disabled');
+        $('button.owl-prev').removeAttr('disabled');
+    
+        if ( ( e.page.index + 1 ) >= e.page.count ){
+            $('button.owl-next').attr('disabled', 'disabled');
+        } else {
+            $('button.owl-next').removeAttr('disabled');
+        }
+        
+        if ( e.page.index == 0 ){
+            $('button.owl-prev').attr('disabled', 'disabled');
+        } else {
+            $('button.owl-prev').removeAttr('disabled');
+        }
+    
+    });
 
     // Gallery carousel
-    $(".gallery-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1500,
-        dots: false,
-        loop: true,
+    $(".owl-carousel").owlCarousel({
+        smartSpeed: 1000,
         nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
+        loop: true,
+        margin: 10,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
         responsive: {
             0:{
                 items:1

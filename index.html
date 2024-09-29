@@ -37,7 +37,7 @@
 
         .gallery-item {
             position: relative;
-            overflow: hidden;
+            overflow: hidden;           
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
@@ -78,15 +78,19 @@
 
         .owl-nav {
             position: absolute;
-            top: 50%;
-            width: 100%;
-            left: 0;
+            top: 460px !important;
+            width: 100% !important;
+            left: 10% !important;
             transform: translateY(-50%);
         }
 
         .owl-prev, .owl-next {
             position: absolute;
             background-color: rgba(255,255,255,0.7) !important;
+        }
+
+        .owl-next {
+            right: 20%;
         }
     </style>
 </head>
@@ -111,9 +115,9 @@
                 <h1 class="font-secondary text-white mb-n2">Tuấn Linh <span class="text-primary">&</span> Thanh Hải</h1>
             </a>
             <div class="navbar-nav mr-auto py-0">
-                <a href="#family" class="nav-item nav-link">Gia đình</a>
+                <!-- <a href="#family" class="nav-item nav-link">Gia đình</a> -->
                 <a href="#event" class="nav-item nav-link">Sự kiện</a>
-                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <!-- <a href="#rsvp" class="nav-item nav-link">RSVP</a> -->
                 <a href="#contact" class="nav-item nav-link">Liên hệ</a>
             </div>
         </div>
@@ -129,9 +133,18 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Tuấn Linh & Thanh Hải</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
+                                <p>Tuấn Linh </p>
+                                <p class="text-warning">&</p>
+                                <p> Thanh Hải</p>
+                            </h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Trọn vẹn một đời</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <p>18H00</p> 
+                                    <p>Thứ bảy, 02-11-2024</p>
+                                    <p>Tại</p>
+                                    <p>Xanh Palace - 135 Hào Nam - Đống Đa - Hà Nội</p>
+                                </h3>
                             </div>
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -144,9 +157,66 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Tuấn Linh & Thanh Hải</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
+                                <p>Tuấn Linh </p>
+                                <p class="text-warning">&</p>
+                                <p> Thanh Hải</p>
+                            </h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Mãi một tình yêu</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <p>18H00</p> 
+                                    <p>Thứ bảy, 02-11-2024</p>
+                                    <p>Tại</p>
+                                    <p>Xanh Palace - 135 Hào Nam - Đống Đa - Hà Nội</p>
+                                </h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-3.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
+                                <p>Tuấn Linh </p>
+                                <p class="text-warning">&</p>
+                                <p> Thanh Hải</p>
+                            </h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <p>18H00</p> 
+                                    <p>Thứ bảy, 02-11-2024</p>
+                                    <p>Tại</p>
+                                    <p>Xanh Palace - 135 Hào Nam - Đống Đa - Hà Nội</p>
+                                </h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-4.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
+                                <p>Tuấn Linh </p>
+                                <p class="text-warning">&</p>
+                                <p> Thanh Hải</p>
+                            </h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">
+                                    <p>18H00</p> 
+                                    <p>Thứ bảy, 02-11-2024</p>
+                                    <p>Tại</p>
+                                    <p>Xanh Palace - 135 Hào Nam - Đống Đa - Hà Nội</p>
+                                </h3>
                             </div>
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -203,7 +273,7 @@
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">Chủ rể</h3>
                         <p>Ngày cưới hôm nay thật đặc biệt, chúng mình hy vọng mọi người được vui. Hãy chung vui với chúng mình bằng thật nhiều những tấm ảnh. Nếu ai còn rảnh rỗi, mời bạn nán lại tới cuối chương trình để chụp ảnh, chuyện trò cùng chúng mình. Xin cảm ơn tất cả mọi người đã đến đây hôm nay!</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Thanh Hải</h3>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Tuấn Linh</h3>
                         <div class="position-relative">
                             <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/bun.ljnk/"><i class="fab fa-facebook-f"></i></a>
@@ -213,18 +283,18 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
                 </div>
             </div>
             <div class="row m-0">
                 <div class="col-md-6 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
                 </div>
                 <div class="col-md-6 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">Cô dâu</h3>
                         <p>Ngày hôm nay chúng ta chính thức về chung một nhà cũng là ngày em nhận ra rằng em yêu anh nhiều hơn bất cứ điều gì! Hãy luôn nắm chặt tay em cùng em bước đi đến hết cuộc đời này, anh nhé!</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Kwan</h3>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Thanh Hải</h3>
                         <div class="position-relative">
                             <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/hai.bee.54"><i class="fab fa-facebook-f"></i></a>
@@ -304,14 +374,47 @@
 
     <!-- Gallery Start -->
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+        <div class="section-title position-relative text-center">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Thư viện ảnh</h6>
-            <h1 class="font-secondary display-4 text-white">Ảnh cưới của chúng mình</h1>
+            <h1 class="font-secondary display-4 text-white">Ảnh cưới của chúng tôi</h1>
             <i class="far fa-heart text-white"></i>
         </div>
-        <div class="container">
-            <div id="gallery-carousel" class="owl-carousel owl-theme">
-                <!-- Gallery items will be dynamically inserted here -->
+        <div  id="gallery-carousel" class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -396,8 +499,8 @@
     <script src="js/main.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const galleryCarousel = document.getElementById('gallery-carousel');
+        $(document).ready(function() {
+            const galleryCarousel = $('#gallery-carousel');
             const maxImages = 80;
             let loadedImages = [];
 
@@ -405,19 +508,17 @@
                 for (let i = 1; i <= maxImages; i++) {
                     const imagePath = `img/gallery-${i}.JPG`;
                     const img = new Image();
+                    img.src = imagePath;
                     img.onload = function() {
                         loadedImages.push(imagePath);
-                        if (loadedImages.length === maxImages || i === maxImages) {
-                            initializeCarousel();
-                        }
                     };
                     img.onerror = function() {
-                        if (loadedImages.length > 0) {
-                            initializeCarousel();
-                        }
+                        loadedImages = loadedImages.filter(x => x !== imagePath);
                         return;
                     };
-                    img.src = imagePath;
+                    if(i == maxImages){
+                        initializeCarousel();
+                    }
                 }
             }
 
@@ -425,39 +526,15 @@
                 let galleryHTML = '';
                 loadedImages.forEach((imagePath, index) => {
                     galleryHTML += `
-                        <div class="item">
-                            <div class="gallery-item">
-                                <img class="img-fluid" src="${imagePath}" alt="Gallery Image ${index + 1}">
-                                <a href="${imagePath}" data-lightbox="gallery">
-                                    <i class="fa fa-2x fa-plus text-white"></i>
-                                </a>
-                            </div>
+                        <div class="gallery-item">
+                            <img class="img-fluid" src="${imagePath}" alt="Gallery Image ${index + 1}">
+                            <a href="${imagePath}" data-lightbox="gallery">
+                                <i class="fa fa-2x fa-plus text-white"></i>
+                            </a>
                         </div>
                     `;
                 });
                 galleryCarousel.innerHTML = galleryHTML;
-                $('.owl-carousel').owlCarousel({
-                    items: 3,
-                    loop: true,
-                    margin: 20,
-                    nav: true,
-                    dots: true,
-                    autoplay: true,
-                    autoplayTimeout: 1000,
-                    autoplayHoverPause: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        768: {
-                            items: 2
-                        },
-                        992: {
-                            items: 3
-                        }
-                    },
-                    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
-                });
             }
 
             loadGalleryImages();
